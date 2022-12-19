@@ -7,5 +7,38 @@
     gap: clamp(2rem, 8vw, 4remo);
 }
 button {
-    background: black;
+    background: transparent;
+    border: 5px solid var(--button-color, black);
+    border-radius: 1rem;
+}
+
+.button-one{
+     --button-color: #333;
+}
+
+.button-one .line {
+    transition: 1s;
+    transform-origin: center;
+}
+
+.button-one:hover :is(.top, .bottom) {
+    y: 45;
+}
+
+.button-one:hover :is(.circle_middle) {
+    cx: 45;
+}
+
+.button-one:hover :is(.left){
+    y: 17.5;
+    x: 45;
+}
+
+.button-one:hover :is(.left){
+    rotate: 90deg;
+}
+
+
+.button-one[aria-expanded="true"] {
+    x
 }
