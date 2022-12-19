@@ -1,0 +1,11 @@
+
+
+.logo{
+    padding: 3rem;
+    max-width: 1200px;
+    display: flex;
+    gap: clamp(2rem, 8vw, 4remo);
+}
+button {
+    background: black;
+}
