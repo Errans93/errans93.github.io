@@ -26,7 +26,7 @@ button {
 }
 
 .button-one:hover :is(.circle_middle) {
-    cx: 45;
+    cx: 50;
 }
 
 .button-one:hover :is(.left){
@@ -36,6 +36,14 @@ button {
 
 .button-one:hover :is(.left){
     rotate: 90deg;
+}
+
+.button-one:hover :is(.left){
+    opacity: 0;
+}
+
+.button-one:hover :is(.top, .bottom, .middle){
+    opacity: 0;
 }
 
 
