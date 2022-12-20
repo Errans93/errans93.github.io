@@ -21,12 +21,16 @@ button {
     transform-origin: center;
 }
 
-.button-one:hover :is(.top, .bottom) {
+.button-one:hover :is(.top) {
     y: 45;
+    x: 27.5;
+    
 }
 
-.button-one:hover :is(.circle_middle) {
-    cx: 50;
+.button-one:hover :is(.bottom) {
+    y: 45;
+    x: 27.5;
+    
 }
 
 .button-one:hover :is(.left){
@@ -38,13 +42,23 @@ button {
     rotate: 90deg;
 }
 
-.button-one:hover :is(.left){
+.button-one:hover :is(.top){
+    rotate: 45deg;
+}
+
+.button-one:hover :is(.bottom){
+    rotate: -45deg;
+}
+
+.button-one:hover :is(.circle_middle) {
+    cx: 50;
+}
+
+.button-one:hover :is(.middle, .left){
     opacity: 0;
 }
 
-.button-one:hover :is(.top, .bottom, .middle){
-    opacity: 0;
-}
+
 
 
 .button-one[aria-expanded="true"] {
