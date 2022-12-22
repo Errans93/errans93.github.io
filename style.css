@@ -17,13 +17,38 @@ button {
 }
 
 .button-one .line {
-    transition: 1s;
-    transform-origin: center;
+    transition:
+        cx 300ms ease-in,
+        x 300ms ease-in,
+        y 300ms ease-in 300ms,
+        rotate 300ms ease-in,
+        opacity 0ms ease-in 600ms,
+        fill 0ms 1000ms;
+        ;
+        transform-origin: center;
+}
+
+.button-one:hover .line {
+    transition:
+        cx 300ms ease-in,
+        x 300ms ease-in,
+        y 300ms ease-in,
+        rotate 300ms ease-in 300ms,
+        opacity 0ms ease-in 600ms,
+        fill 0ms 10ms;
+        ;
+
+}
+
+.button-one:hover :is(.circle_middle) {
+    cx: 50;
+    fill:rgb(20, 137, 240);
 }
 
 .button-one:hover :is(.top) {
     y: 45;
     x: 27.5;
+    
     
 }
 
@@ -50,9 +75,7 @@ button {
     rotate: -45deg;
 }
 
-.button-one:hover :is(.circle_middle) {
-    cx: 50;
-}
+
 
 .button-one:hover :is(.middle, .left){
     opacity: 0;
