@@ -67,9 +67,45 @@ button {
     x: 45;
 }
 
-.button-one:hover :is(.move_circle) {
-    rx: 49;
-    ry: 49;
+.button-one:hover :is(.move_circle_one) {
+    rx: 45;
+    ry: 45;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_two) {
+    rx: 39;
+    ry: 39;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_three) {
+    rx: 34;
+    ry: 34;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_four) {
+    rx: 29;
+    ry: 29;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_five) {
+    rx: 25;
+    ry: 25;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_six) {
+    rx: 21;
+    ry: 21;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_seven) {
+    rx: 18;
+    ry: 18;
     stroke:#333;
 }
 
