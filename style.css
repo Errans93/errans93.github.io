@@ -25,6 +25,7 @@ button {
         y 300ms ease-in 300ms,
         rotate 300ms ease-in,
         opacity 0ms ease-in 300ms,
+        width 0ms ease-in 300ms,
         fill 0ms 1000ms;
         ;
         transform-origin: center;
@@ -39,10 +40,12 @@ button {
         y 300ms ease-in,
         rotate 300ms ease-in 300ms,
         opacity 0ms ease-in 300ms,
+        width 0ms ease-in 300ms,
         fill 0ms 10ms;
         ;
 
 }
+
 
 .button-one:hover :is(.circle_middle) {
     cx: 50;
@@ -115,10 +118,20 @@ button {
 
 .button-one:hover :is(.top){
     rotate: 45deg;
+    width: 5;
 }
 
 .button-one:hover :is(.bottom){
     rotate: -45deg;
+    width: 5;
+}
+
+.button-one:hover :is(.top){
+    width: 5;
+}
+
+.button-one:hover :is(.bottom){
+    width: 5;
 }
 
 
