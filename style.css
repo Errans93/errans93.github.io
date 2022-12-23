@@ -19,10 +19,12 @@ button {
 .button-one .line {
     transition:
         cx 300ms ease-in,
+        rx 300ms ease-in,
+        ry 300ms ease-in,
         x 300ms ease-in,
         y 300ms ease-in 300ms,
         rotate 300ms ease-in,
-        opacity 0ms ease-in 600ms,
+        opacity 0ms ease-in 300ms,
         fill 0ms 1000ms;
         ;
         transform-origin: center;
@@ -31,10 +33,12 @@ button {
 .button-one:hover .line {
     transition:
         cx 300ms ease-in,
+        rx 300ms ease-in 300ms,
+        ry 300ms ease-in 300ms,
         x 300ms ease-in,
         y 300ms ease-in,
         rotate 300ms ease-in 300ms,
-        opacity 0ms ease-in 600ms,
+        opacity 0ms ease-in 300ms,
         fill 0ms 10ms;
         ;
 
@@ -42,13 +46,13 @@ button {
 
 .button-one:hover :is(.circle_middle) {
     cx: 50;
-    fill:rgb(20, 137, 240);
+ 
 }
 
 .button-one:hover :is(.top) {
     y: 45;
     x: 27.5;
-    
+        
     
 }
 
@@ -61,6 +65,12 @@ button {
 .button-one:hover :is(.left){
     y: 17.5;
     x: 45;
+}
+
+.button-one:hover :is(.move_circle) {
+    rx: 49;
+    ry: 49;
+    stroke:#333;
 }
 
 .button-one:hover :is(.left){
@@ -84,6 +94,3 @@ button {
 
 
 
-.button-one[aria-expanded="true"] {
-    x
-}
