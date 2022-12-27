@@ -112,18 +112,51 @@ button {
     stroke:#333;
 }
 
+.button-one:hover :is(.move_circle_eight) {
+    rx: 15;
+    ry: 15;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_nine) {
+    rx: 13;
+    ry: 13;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_ten) {
+    rx: 11;
+    ry: 11;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_eleven) {
+    rx: 9;
+    ry: 9;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_twelve) {
+    rx: 7;
+    ry: 7;
+    stroke:#333;
+}
+
+.button-one:hover :is(.move_circle_thirteen) {
+    rx: 17;
+    ry: 17;
+    stroke:#333;
+}
 .button-one:hover :is(.left){
     rotate: 90deg;
 }
 
 .button-one:hover :is(.top){
     rotate: 45deg;
-    width: 5;
 }
 
 .button-one:hover :is(.bottom){
     rotate: -45deg;
-    width: 5;
 }
 
 .button-one:hover :is(.top){
@@ -142,4 +175,28 @@ button {
 
 
 
+/*----------------------  Button Two ---------------------------------------- */
+
+.button-two {
+ --button-color: #333;
+}
+
+.button-two .line{
+    transition: stroke-dashoffset 0.75s;
+}
+
+.button-two:hover .line{
+    stroke-dashoffset: 79.9;
+}
+.button-two:hover :is(.mouth_r, .mouth_l){
+    stroke-dashoffset: 9.9;
+}
+
+.button-two:hover :is(.prova){
+    stroke-dashoffset: 0.1;
+}
+
+.button-two:hover :is(.smile){
+    stroke-dashoffset: 0.1;
+}
 
