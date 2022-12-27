@@ -6,6 +6,7 @@
     display: flex;
     gap: clamp(2rem, 8vw, 4remo);
 }
+
 button {
     background: transparent;
     border: 5px solid var(--button-color, black);
@@ -45,7 +46,6 @@ button {
         ;
 
 }
-
 
 .button-one:hover :is(.circle_middle) {
     cx: 50;
@@ -147,6 +147,7 @@ button {
     ry: 17;
     stroke:#333;
 }
+
 .button-one:hover :is(.left){
     rotate: 90deg;
 }
@@ -167,8 +168,6 @@ button {
     width: 5;
 }
 
-
-
 .button-one:hover :is(.middle, .left){
     opacity: 0;
 }
@@ -182,21 +181,57 @@ button {
 }
 
 .button-two .line{
-    transition: stroke-dashoffset 0.75s;
+    transition: stroke-dashoffset 0.75s,
+    cx 300ms ease-in,
+    cy 300ms ease-in;
 }
 
 .button-two:hover .line{
     stroke-dashoffset: 79.9;
 }
+
 .button-two:hover :is(.mouth_r, .mouth_l){
     stroke-dashoffset: 9.9;
-}
-
-.button-two:hover :is(.prova){
-    stroke-dashoffset: 0.1;
 }
 
 .button-two:hover :is(.smile){
     stroke-dashoffset: 0.1;
 }
 
+/*----------------------  Button Three ---------------------------------------- */
+
+.button-three {
+    --button-color: #333;
+    overflow: hidden;
+   }
+
+   .button-three .line {
+    transition: 2s;
+   stroke-dasharray: 65 10 70 5 70 10 50 10 80 5 1000;
+   }
+
+   .button-three:hover .line {
+   stroke-dasharray: 65 10 70 5 70 10 50 10 80 5 1000;
+   stroke-dashoffset: -500;
+   }
+
+   .button-three .edo {
+    transition: translate 2s;
+   }
+
+   .button-three:hover .line {
+    translate: 0 -30px;
+    }
+
+
+
+   
+
+ 
+
+
+
+
+
+
+ 
