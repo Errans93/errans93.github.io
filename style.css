@@ -39,7 +39,7 @@ button {
     
  }
 
-.button-one:active .edo {
+.button-one:active:active .edo {
     transition: translate 3s,
     rotate 600ms ease-in 300ms;
     transform-origin: center;
@@ -191,7 +191,6 @@ button {
 }
 
 
-
 /*----------------------  Button Two ---------------------------------------- */
 
 .button-two {
@@ -200,13 +199,37 @@ button {
 
 .button-two .line{
     transition: stroke-dashoffset 0.75s,
-    cx 300ms ease-in,
+    cx 300ms ease-in,  
     cy 300ms ease-in;
 }
 
 .button-two:hover .line{
     stroke-dashoffset: 79.9;
 }
+
+.button-two :is(.light_r, .light_l) {
+    transition: translate 3s,
+    rotate 300ms ease-in;
+    transform-origin: center;
+    
+    
+ }
+
+.button-two:hover :is(.light_r, .light_l){
+    transition:
+    rotate 300ms ease-in 300ms;
+    transform-origin: center;
+
+
+}
+
+.button-two:hover :is(.light_r) {
+    rotate: 2deg;
+   }
+
+   .button-two:hover :is(.light_l) {
+    rotate: 2deg;
+   }
 
 .button-two:hover :is(.mouth_r, .mouth_l){
     stroke-dashoffset: 9.9;
