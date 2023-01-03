@@ -2,9 +2,10 @@
 
 .logo{
     padding: 3rem;
-    max-width: 1200px;
-    display: flex;
-    gap: clamp(2rem, 8vw, 4remo);
+    max-width: 850px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 3fr);
 }
 
 button {
@@ -15,6 +16,8 @@ button {
 
 .button-one{
      --button-color: #333;
+     grid-column: 2;
+     
 }
 
 .button-one .line {
@@ -195,6 +198,7 @@ button {
 
 .button-two {
  --button-color: #333;
+ grid-column: 2;
 }
 
 .button-two .line{
@@ -223,13 +227,7 @@ button {
 
 }
 
-.button-two:hover :is(.light_r) {
-    rotate: 2deg;
-   }
 
-   .button-two:hover :is(.light_l) {
-    rotate: 2deg;
-   }
 
 .button-two:hover :is(.mouth_r, .mouth_l){
     stroke-dashoffset: 9.9;
@@ -244,6 +242,7 @@ button {
 .button-three {
     --button-color: #333;
     overflow: hidden;
+    grid-column: 2;
    }
 
    .button-three .line {
@@ -282,12 +281,5 @@ button {
 
 
    
-
- 
-
-
-
-
-
 
  
