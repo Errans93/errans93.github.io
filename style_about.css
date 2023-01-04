@@ -1,0 +1,322 @@
+* {
+    --image-1: url("https://firebasestorage.googleapis.com/v0/b/codeible.appspot.com/o/_coursefiles%2Fres%2FPure%20CSS%3A%203D%20Rotating%20Cube%20Art%20Gallery%2Fsample_image_1.jpg?alt=media&token=ab289a4d-28df-419e-8392-b7131a58cbd7");
+    --image-2: url("https://firebasestorage.googleapis.com/v0/b/codeible.appspot.com/o/_coursefiles%2Fres%2FPure%20CSS%3A%203D%20Rotating%20Cube%20Art%20Gallery%2Fsample_image_2.jpg?alt=media&token=56847d14-7337-4d7c-b0b4-ec6444cef60a");
+    --image-3: url("https://firebasestorage.googleapis.com/v0/b/codeible.appspot.com/o/_coursefiles%2Fres%2FPure%20CSS%3A%203D%20Rotating%20Cube%20Art%20Gallery%2Fsample_image_3.jpg?alt=media&token=4b1a7a35-5c03-4b4b-9e1d-afec6d2465ca");
+    --image-4: url("https://firebasestorage.googleapis.com/v0/b/codeible.appspot.com/o/_coursefiles%2Fres%2FPure%20CSS%3A%203D%20Rotating%20Cube%20Art%20Gallery%2Fsample_image_4.jpg?alt=media&token=ee68be8f-5d7f-4546-8d6a-6cf43786db98");
+    --image-5: url("https://firebasestorage.googleapis.com/v0/b/codeible.appspot.com/o/_coursefiles%2Fres%2FPure%20CSS%3A%203D%20Rotating%20Cube%20Art%20Gallery%2Fsample_image_5.jpg?alt=media&token=91650a12-efc8-4027-9ada-57c4a9af7b69");
+    --image-6: url("https://firebasestorage.googleapis.com/v0/b/codeible.appspot.com/o/_coursefiles%2Fres%2FPure%20CSS%3A%203D%20Rotating%20Cube%20Art%20Gallery%2Fsample_image_6.jpg?alt=media&token=d83a0051-7e6e-41c3-9a8d-c028e0a31069");
+}
+
+button {
+    background: transparent;
+    border: 5px solid var(--button-color, black);
+    border-radius: 10rem;
+}
+
+.button-one {
+    --button-color: #333;
+    grid-column: 2;
+}
+
+.button-one .line {
+    transition:
+        cx 300ms ease-in,
+        rx 300ms ease-in,
+        ry 300ms ease-in,
+        x 300ms ease-in,
+        y 300ms ease-in 300ms,
+        rotate 300ms ease-in,
+        opacity 0ms ease-in 300ms,
+        width 0ms ease-in 300ms,
+        fill 0ms 1000ms;
+    ;
+    transform-origin: center;
+}
+
+.button-one .edo {
+    transition: translate 3s,
+        rotate 600ms ease-in;
+
+
+}
+
+.button-one:active:active .edo {
+    transition: translate 3s,
+        rotate 600ms ease-in 300ms;
+    transform-origin: center;
+
+}
+
+.button-one:active .edo {
+    rotate: 360deg;
+}
+
+.button-one:active .line {
+    transition:
+        cx 300ms ease-in,
+        rx 300ms ease-in 300ms,
+        ry 300ms ease-in 300ms,
+        x 300ms ease-in,
+        y 300ms ease-in,
+        rotate 300ms ease-in 300ms,
+        opacity 0ms ease-in 300ms,
+        width 0ms ease-in 300ms,
+        fill 0ms 10ms;
+    ;
+
+}
+
+.button-one:active :is(.circle_middle) {
+    cx: 50;
+
+}
+
+.button-one:active :is(.top) {
+    y: 45;
+    x: 27.5;
+}
+
+.button-one:active :is(.bottom) {
+    y: 45;
+    x: 27.5;
+}
+
+.button-one:active :is(.left) {
+    y: 17.5;
+    x: 45;
+}
+
+.button-one:active :is(.move_circle_one) {
+    rx: 42;
+    ry: 42;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_two) {
+    rx: 37;
+    ry: 37;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_three) {
+    rx: 32;
+    ry: 32;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_four) {
+    rx: 27;
+    ry: 27;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_five) {
+    rx: 23;
+    ry: 23;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_six) {
+    rx: 20;
+    ry: 20;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_seven) {
+    rx: 17;
+    ry: 17;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_eight) {
+    rx: 15;
+    ry: 15;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_nine) {
+    rx: 13;
+    ry: 13;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_ten) {
+    rx: 11;
+    ry: 11;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_eleven) {
+    rx: 9;
+    ry: 9;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_twelve) {
+    rx: 7;
+    ry: 7;
+    stroke: #333;
+}
+
+.button-one:active :is(.move_circle_thirteen) {
+    rx: 17;
+    ry: 17;
+    stroke: #333;
+}
+
+.button-one:active :is(.left) {
+    rotate: 90deg;
+}
+
+.button-one:active :is(.top) {
+    rotate: 45deg;
+}
+
+.button-one:active :is(.bottom) {
+    rotate: -45deg;
+}
+
+.button-one:active :is(.top) {
+    width: 5;
+}
+
+.button-one:active :is(.bottom) {
+    width: 5;
+}
+
+.button-one:active :is(.middle, .left) {
+    opacity: 0;
+}
+
+.button-two {
+    --button-color: #333;
+    grid-column: 2;
+}
+
+.button-two .line {
+    transition: stroke-dashoffset 0.75s,
+        cx 300ms ease-in,
+        cy 300ms ease-in;
+}
+
+.button-two:hover .line {
+    stroke-dashoffset: 79.9;
+}
+
+.button-two :is(.light_r, .light_l) {
+    transition: translate 3s,
+        rotate 300ms ease-in;
+    transform-origin: center;
+}
+
+.button-two:hover :is(.light_r, .light_l) {
+    transition:
+        rotate 300ms ease-in 300ms;
+    transform-origin: center;
+}
+
+
+
+.button-two:hover :is(.mouth_r, .mouth_l) {
+    stroke-dashoffset: 9.9;
+}
+
+.button-two:hover :is(.smile) {
+    stroke-dashoffset: 0.1;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.cube-container {
+    width: 17em;
+    height: 17em;
+    text-align: center;
+    perspective: 60em;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition-duration: 2s;
+}
+
+.cube-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 5px solid #333;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    
+}
+
+.radio-button {
+    margin-bottom: 5em;
+    
+}
+
+
+.cube-side:nth-child(1) {
+    transform: rotateY(0deg) translateZ(10em);
+    
+
+}
+.cube-side:nth-child(2) {
+    transform: rotateY(90deg) translateZ(10em);
+   
+}
+.cube-side:nth-child(3) {
+    transform: rotateY(180deg) translateZ(10em);
+    
+}
+.cube-side:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(10em);
+    
+}
+.cube-side:nth-child(5) {
+    transform: rotateX(-90deg) translateZ(10em);
+    
+}
+.cube-side:nth-child(6) {
+    transform: rotateX(90deg) translateZ(10em);
+    
+}
+
+
+.radio-button:checked ~ .cube {
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+.radio-button:nth-child(1):checked ~ .cube { 
+    transform: rotateX(-15deg) rotateY(20deg);
+    
+}
+.radio-button:nth-child(2):checked ~ .cube { 
+    transform: rotateX(-15deg) rotateY(180deg);
+}
+.radio-button:nth-child(3):checked ~ .cube { 
+    transform: rotateX(-15deg) rotateY(90deg);
+}
+.radio-button:nth-child(4):checked ~ .cube { 
+    transform: rotateX(-15deg) rotateY(-90deg);
+}
+.radio-button:nth-child(5):checked ~ .cube { 
+    transform: rotateX(-105deg) rotateY(0deg);
+}
+.radio-button:nth-child(6):checked ~ .cube { 
+    transform: rotateX(75deg) rotateY(0deg);
+}
