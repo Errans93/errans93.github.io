@@ -16,6 +16,7 @@ button {
 .button-one {
     --button-color: #333;
     grid-column: 2;
+    
 }
 
 .button-one .line {
@@ -233,14 +234,15 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
+    box-shadow: 20px 20px  #333333;}
 
 
 .cube-container {
-    width: 17em;
-    height: 17em;
+    width: 20em;
+    height: 20em;
     text-align: center;
     perspective: 60em;
+    
 }
 
 .cube {
@@ -249,6 +251,7 @@ body {
     position: relative;
     transform-style: preserve-3d;
     transition-duration: 2s;
+    
 }
 
 .cube-side {
@@ -270,28 +273,28 @@ body {
 
 
 .cube-side:nth-child(1) {
-    transform: rotateY(0deg) translateZ(10em);
+    transform: rotateY(0deg) translateZ(30em);
     
 
 }
 .cube-side:nth-child(2) {
-    transform: rotateY(90deg) translateZ(10em);
+    transform: rotateY(90deg) translateZ(30em);
    
 }
 .cube-side:nth-child(3) {
-    transform: rotateY(180deg) translateZ(10em);
+    transform: rotateY(180deg) translateZ(30em);
     
 }
 .cube-side:nth-child(4) {
-    transform: rotateY(-90deg) translateZ(10em);
+    transform: rotateY(-90deg) translateZ(30em);
     
 }
 .cube-side:nth-child(5) {
-    transform: rotateX(-90deg) translateZ(10em);
+    transform: rotateX(-90deg) translateZ(30em);
     
 }
 .cube-side:nth-child(6) {
-    transform: rotateX(90deg) translateZ(10em);
+    transform: rotateX(90deg) translateZ(30em);
     
 }
 
@@ -302,7 +305,7 @@ body {
 
 }
 .radio-button:nth-child(1):checked ~ .cube { 
-    transform: rotateX(-15deg) rotateY(20deg);
+    transform: rotateX(-15deg) rotateY(0deg);
     
 }
 .radio-button:nth-child(2):checked ~ .cube { 

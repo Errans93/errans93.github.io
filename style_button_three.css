@@ -1,0 +1,56 @@
+.logo {
+    padding: 3rem;
+    max-width: 850px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 3fr);
+
+}
+
+button {
+    background: transparent;
+    border: 5px solid var(--button-color, black);
+    border-radius: 1rem;
+
+}
+
+.button-three {
+    --button-color: #333;
+    overflow: hidden;
+    grid-column: 2;
+}
+
+.button-three .line {
+    transition: 2s;
+    stroke-dasharray: 65 10 70 5 70 10 50 10 80 5 1000;
+}
+
+.button-three:hover .line {
+    stroke-dasharray: 65 10 70 5 70 10 50 10 80 5 1000;
+    stroke-dashoffset: -500;
+}
+
+.button-three .edo {
+    transition: translate 2s,
+        rotate 300ms ease-in;
+}
+
+
+.button-three:hover .edo {
+    transition: translate 3s,
+        rotate 300ms ease-in;
+    transform-origin: center;
+}
+
+.button-three:hover .edo {
+    rotate: 720deg;
+}
+
+.button-three:hover .line {
+    translate: 0px 0px;
+}
+
+.button-three .line {
+    width: 100px;
+    height: 50px;
+}

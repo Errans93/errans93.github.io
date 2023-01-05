@@ -1,0 +1,51 @@
+.logo {
+    padding: 3rem;
+    max-width: 850px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+button {
+    background: transparent;
+    border: 5px solid var(--button-color, black);
+    border-radius: 1rem;
+}
+
+
+.button-five {
+    --button-color: #333;
+    overflow: hidden;
+    grid-column: 2;
+}
+
+.button-five .line_double_bound {
+    transition: translate 3s,
+        rotate 300ms ease-in,
+        opacity 200ms ease-in;
+    transform-origin: center;
+}
+
+
+.button-five:hover .line_double_bound {
+    transition: translate 3s,
+        rotate 300ms ease-in
+        opacity 200ms ease-in;
+    transform-origin: center;
+}
+
+.button-five:hover .line_double_bound {
+    rotate: 360deg;
+    opacity: 0;
+}
+
+.button-five .circle_arom{
+    opacity: 0;
+}
+
+.button-five:hover .circle_arom{
+    opacity: 1;
+}
+
+
+
