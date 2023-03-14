@@ -1,0 +1,14 @@
+body {
+    background: rgb(255,255,255);
+    overflow: hidden;
+    font-family: "Segoe UI", sans-serif;
+  }
+  #text {
+    line-height: 8px;
+    background: url("./Errani_Edoardo.jpg");
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    background-size: 100vh;
+  }
