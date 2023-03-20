@@ -1,0 +1,50 @@
+.logo {
+    padding: 3rem;
+    max-width: 850px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+button {
+    background: transparent;
+    border: 5px solid var(--button-color, black);
+    border-radius: 1rem;
+}
+
+.button-two {
+    --button-color: #333;
+    grid-column: 2;
+}
+
+.button-two .line {
+    transition: stroke-dashoffset 0.75s,
+        cx 300ms ease-in,
+        cy 300ms ease-in;
+}
+
+.button-two:hover .line {
+    stroke-dashoffset: 79.9;
+}
+
+.button-two :is(.light_r, .light_l) {
+    transition: translate 3s,
+        rotate 300ms ease-in;
+    transform-origin: center;
+}
+
+.button-two:hover :is(.light_r, .light_l) {
+    transition:
+        rotate 300ms ease-in 300ms;
+    transform-origin: center;
+}
+
+
+
+.button-two:hover :is(.mouth_r, .mouth_l) {
+    stroke-dashoffset: 9.9;
+}
+
+.button-two:hover :is(.smile) {
+    stroke-dashoffset: 0.1;
+}
